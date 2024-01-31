@@ -1,0 +1,44 @@
+[configuration]
+
+entry_symbol = "library_init"
+compatibility_minimum = "4.2"
+
+[libraries]
+android.debug.arm64 = "res://bin/libscannur.android.template_debug.arm64.so"
+android.release.arm64 = "res://bin/libscannur.android.template_release.arm64.so"
+
+[dependencies]
+android.debug.arm64 = {
+    "res://bin/libopencv_calib3d.so" : "", 
+    "res://bin/libopencv_core.so" : "", 
+    "res://bin/libopencv_dnn.so" : "", 
+    "res://bin/libopencv_features2d.so" : "", 
+    "res://bin/libopencv_flann.so" : "", 
+    "res://bin/libopencv_gapi.so" : "", 
+    "res://bin/libopencv_highgui.so" : "", 
+    "res://bin/libopencv_imgcodecs.so" : "", 
+    "res://bin/libopencv_imgproc.so" : "", 
+    "res://bin/libopencv_ml.so" : "", 
+    "res://bin/libopencv_objdetect.so" : "", 
+    "res://bin/libopencv_photo.so" : "", 
+    "res://bin/libopencv_stitching.so" : "", 
+    "res://bin/libopencv_video.so" : "", 
+    "res://bin/libopencv_videoio.so" : ""
+}
+android.release.arm64 = {
+    "res://bin/libopencv_calib3d.so" : "", 
+    "res://bin/libopencv_core.so" : "", 
+    "res://bin/libopencv_dnn.so" : "", 
+    "res://bin/libopencv_features2d.so" : "", 
+    "res://bin/libopencv_flann.so" : "", 
+    "res://bin/libopencv_gapi.so" : "", 
+    "res://bin/libopencv_highgui.so" : "", 
+    "res://bin/libopencv_imgcodecs.so" : "", 
+    "res://bin/libopencv_imgproc.so" : "", 
+    "res://bin/libopencv_ml.so" : "", 
+    "res://bin/libopencv_objdetect.so" : "", 
+    "res://bin/libopencv_photo.so" : "", 
+    "res://bin/libopencv_stitching.so" : "", 
+    "res://bin/libopencv_video.so" : "", 
+    "res://bin/libopencv_videoio.so" : ""
+}
